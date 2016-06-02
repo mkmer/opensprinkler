@@ -1,3 +1,5 @@
+v1.8.4 : Kasper - Ported to compile in Arduino 1.6.3
+
 =====================================
 === OpenSprinkler Arduino Library ===
 =====================================

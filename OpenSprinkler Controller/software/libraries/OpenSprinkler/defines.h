@@ -13,7 +13,7 @@
                             // if this number is different from stored in EEPROM,
                             // an EEPROM reset will be automatically triggered
 
-#define MAX_EXT_BOARDS  3   // maximum number of ext. boards (each consists of 8 stations)
+#define MAX_EXT_BOARDS  1   // maximum number of ext. boards (each consists of 8 stations)
                             // total number of stations: (1+MAX_EXT_BOARDS) * 8
                             // increasing this number will consume more memory and EEPROM space
 
@@ -79,7 +79,7 @@ typedef enum {
 // =====================================
 
 // ------ Define hardware version here ------
-//#define SVC_HW_VERSION 14
+#define SVC_HW_VERSION 14
 //#define SVC_HW_VERSION 13
 //#define SVC_HW_VERSION 12
 //#define SVC_HW_VERSION 11   // OpenSprinkler v1.0 use the same settings as v1.1

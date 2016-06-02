@@ -17,31 +17,31 @@ byte OpenSprinkler::masop_bits[MAX_EXT_BOARDS+1];
 unsigned long OpenSprinkler::raindelay_stop_time;
 
 // Option names
-prog_char _str_fwv [] PROGMEM = "Firmware ver.";
-prog_char _str_tz  [] PROGMEM = "Time zone:";
-prog_char _str_ntp [] PROGMEM = "NTP Sync:";
-prog_char _str_dhcp[] PROGMEM = "Use DHCP:";
-prog_char _str_ip1 [] PROGMEM = "Static.ip1:";
-prog_char _str_ip2 [] PROGMEM = "ip2:";
-prog_char _str_ip3 [] PROGMEM = "ip3:";
-prog_char _str_ip4 [] PROGMEM = "ip4:";
-prog_char _str_gw1 [] PROGMEM = "Gateway.ip1:";
-prog_char _str_hp0 [] PROGMEM = "HTTP port:";
-prog_char _str_hp1 [] PROGMEM = "";
-prog_char _str_ar  [] PROGMEM = "Auto reconnect:";
-prog_char _str_ext [] PROGMEM = "Ext. boards:";
-prog_char _str_seq [] PROGMEM = "Sequential:";
-prog_char _str_sdt [] PROGMEM = "Station delay:";
-prog_char _str_mas [] PROGMEM = "Master station:";
-prog_char _str_mton[] PROGMEM = "Mas. on adj.:";
-prog_char _str_mtof[] PROGMEM = "Mas. off adj.:";
-prog_char _str_urs [] PROGMEM = "Use rain sensor:";
-prog_char _str_rso [] PROGMEM = "Normally open:";
-prog_char _str_wl  [] PROGMEM = "Water level (%):";
-prog_char _str_stt [] PROGMEM = "Selftest time:";
-prog_char _str_ipas[] PROGMEM = "Ignore password:";
-prog_char _str_devid[] PROGMEM = "Device ID:";
-prog_char _str_reset[] PROGMEM = "Reset all?";
+const char _str_fwv [] PROGMEM = "Firmware ver.";
+const char _str_tz  [] PROGMEM = "Time zone:";
+const char _str_ntp [] PROGMEM = "NTP Sync:";
+const char _str_dhcp[] PROGMEM = "Use DHCP:";
+const char _str_ip1 [] PROGMEM = "Static.ip1:";
+const char _str_ip2 [] PROGMEM = "ip2:";
+const char _str_ip3 [] PROGMEM = "ip3:";
+const char _str_ip4 [] PROGMEM = "ip4:";
+const char _str_gw1 [] PROGMEM = "Gateway.ip1:";
+const char _str_hp0 [] PROGMEM = "HTTP port:";
+const char _str_hp1 [] PROGMEM = "";
+const char _str_ar  [] PROGMEM = "Auto reconnect:";
+const char _str_ext [] PROGMEM = "Ext. boards:";
+const char _str_seq [] PROGMEM = "Sequential:";
+const char _str_sdt [] PROGMEM = "Station delay:";
+const char _str_mas [] PROGMEM = "Master station:";
+const char _str_mton[] PROGMEM = "Mas. on adj.:";
+const char _str_mtof[] PROGMEM = "Mas. off adj.:";
+const char _str_urs [] PROGMEM = "Use rain sensor:";
+const char _str_rso [] PROGMEM = "Normally open:";
+const char _str_wl  [] PROGMEM = "Water level (%):";
+const char _str_stt [] PROGMEM = "Selftest time:";
+const char _str_ipas[] PROGMEM = "Ignore password:";
+const char _str_devid[] PROGMEM = "Device ID:";
+const char _str_reset[] PROGMEM = "Reset all?";
 
 
 OptionStruct OpenSprinkler::options[NUM_OPTIONS] = {
@@ -76,15 +76,15 @@ OptionStruct OpenSprinkler::options[NUM_OPTIONS] = {
 };
 
 // Weekday display strings
-prog_char str_day0[] PROGMEM = "Mon";
-prog_char str_day1[] PROGMEM = "Tue";
-prog_char str_day2[] PROGMEM = "Wed";
-prog_char str_day3[] PROGMEM = "Thu";
-prog_char str_day4[] PROGMEM = "Fri";
-prog_char str_day5[] PROGMEM = "Sat";
-prog_char str_day6[] PROGMEM = "Sun";
+const char str_day0[] PROGMEM = "Mon";
+const char str_day1[] PROGMEM = "Tue";
+const char str_day2[] PROGMEM = "Wed";
+const char str_day3[] PROGMEM = "Thu";
+const char str_day4[] PROGMEM = "Fri";
+const char str_day5[] PROGMEM = "Sat";
+const char str_day6[] PROGMEM = "Sun";
 
-char* OpenSprinkler::days_str[7] = {
+const char* OpenSprinkler::days_str[7] = {
   str_day0,
   str_day1,
   str_day2,
@@ -93,6 +93,7 @@ char* OpenSprinkler::days_str[7] = {
   str_day5,
   str_day6
 };
+
 
 // ===============
 // Setup Functions

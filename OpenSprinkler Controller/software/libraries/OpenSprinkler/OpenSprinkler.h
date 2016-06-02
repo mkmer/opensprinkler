@@ -26,7 +26,7 @@
 struct OptionStruct{
   byte value; // each option is byte
   byte max;   // maximum value
-  char* str;  // name string
+  const char* str;  // name string
   byte flag;  // flag
 };
 
@@ -53,7 +53,7 @@ public:
   
   static OptionStruct options[];  // option values, max, name, and flag
     
-  static char* days_str[];		// 3-letter name of each weekday
+  static const char* days_str[];		// 3-letter name of each weekday
   static byte station_bits[]; // station activation bits. each byte corresponds to a board (8 stations)
                               // first byte-> master controller, second byte-> ext. board 1, and so on
   static byte masop_bits[];   // station master operation bits. each byte corresponds to a board (8 stations)
